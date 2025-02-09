@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": true
         }
       },
       "root": "",
@@ -32,6 +33,9 @@
               }
             ],
             "styles": [
+              "primeflex/themes/primeone-light.css",
+              "primeflex/themes/primeone-dark.css",
+              "node_modules/primeflex/primeflex.css",
               "src/styles.scss"
             ],
             "scripts": []

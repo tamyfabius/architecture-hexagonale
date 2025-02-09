@@ -1,0 +1,6 @@
+<div>
+  <pokemon-card-search (searchPokemonCards)="onSearchPokemonCard()" [form]="searchPokemonCardForm"/>
+  <div class="flex justify-content-center flex-row gap-3 align-items-center">
+    <pokemon-card-list [pokemonCards]="pokemonCards()"/>
+  </div>
+</div>

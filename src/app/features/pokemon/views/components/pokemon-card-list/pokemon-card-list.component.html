@@ -1,0 +1,9 @@
+<div>
+  <div class="flex justify-content-center flex-row gap-3 align-items-center">
+    @if (pokemonCards()) {
+      @for (pokemon of pokemonCards(); track pokemon.id) {
+        <app-pokemon-card-item [pokemon]="pokemon"/>
+      }
+    }
+  </div>
+</div>

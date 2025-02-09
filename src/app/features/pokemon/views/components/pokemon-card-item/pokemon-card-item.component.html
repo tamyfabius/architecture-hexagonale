@@ -1,0 +1,38 @@
+<div id="playing-card" class="block p-1 w-20rem">
+  <p-card class="w-full" styleClass="playing-card--bg">
+    <ng-template #header>
+      <div class="flex align-items-center justify-content-between flex-wrap p-2">
+        <div class="flex align-items-center justify-content-center h-2rem font-bold">
+          <div id="name">{{ pokemon().name }}</div>
+        </div>
+        <div class="flex align-items-center justify-content-center h-2rem font-bold">
+          <div id="hp">{{ pokemon().hp }} HP</div>
+          <i class="pi pi-bolt" style="font-size: 1.5rem"></i>
+        </div>
+      </div>
+    </ng-template>
+    <div>
+      <figure class="text-center overflow-hidden">
+        <img src="assets/img/pik.webp" alt="img pokemon" class="w-full h-16rem">
+        <figcaption class="text-center text-sm pt-1">{{ pokemon().figureCaption }}</figcaption>
+      </figure>
+      <div id="capacities">
+        <div class="capacity">
+          <div class="flex justify-content-between flex-wrap pt-2">
+            <div class="flex align-items-center justify-content-between h-2rem font-bold">
+              <div class="cost flex align-items-center justify-content-center mr-2">
+                <i class="pi pi-bolt" style="font-size: 1rem"></i>
+                <i class="pi pi-bolt" style="font-size: 1rem"></i>
+              </div>
+              <div class="name flex align-items-center justify-content-center font-bold">{{ pokemon().attackName }}</div>
+            </div>
+            <div class="flex align-items-center justify-content-center h-2rem font-bold">
+              <div class="damage cost flex align-items-center justify-content-center h-2rem font-bold">{{ pokemon().attackStrength }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="description py-3 text-sm">{{ pokemon().description }}</div>
+      </div>
+    </div>
+  </p-card>
+</div>

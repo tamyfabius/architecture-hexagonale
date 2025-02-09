@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import 'primeflex/primeflex';
+@layer reset, primeng;
+
+@layer reset {
+  body, html {
+    font-family: Roboto, sans-serif, Arial;
+    color: black;
+    margin: 0;
+    height: 100%;
+    box-sizing: inherit;
+    background: linear-gradient(
+      45deg,
+      rgb(252, 228, 252),
+      rgb(218,228, 255)
+    );
+    @include styleclass('flex justify-content-center align-items-center');
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .p-card {
+    background-color: rgba(255, 252, 81, 0.676);
+    .p-card-body {
+      @include styleclass('p-2');
+    }
+  }
+
+  .search-form {
+    &__input {
+      all: unset;
+      @include styleclass('border-none p-2 flex-grow-1');
+    }
+
+    &__button {
+      background-color: rgba(205, 205, 255);
+      margin: 5px;
+      padding: 8px;
+      border: none;
+      border-radius: 50%;
+      color: #000000;
+      width: 34px;
+
+      &.p-button-icon {
+        max-width: 25px;
+        max-height: 25px;
+      }
+
+      &:hover {
+        background-color: rgba(179, 179, 255);
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,6 @@
+<form [formGroup]="form()" class="flex overflow-hidden search-form" id="search-bar">
+  <input autocomplete="off" class="search-form__input" formControlName='searchTerm' name="searchTerm" pInputText
+         placeholder="Search..."/>
+  <p-button (onClick)="onSearchClicked()" class="border-none bg-transparent" icon="pi pi-search"
+            styleClass="search-form__button"></p-button>
+</form>
