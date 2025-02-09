@@ -57,3 +57,6 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+schema architect hexagonal:
+![Capture d’écran 2025-02-10 à 00.37.10.png](../../../Desktop/Capture%20d%E2%80%99%C3%A9cran%202025-02-10%20%C3%A0%2000.37.10.png)
